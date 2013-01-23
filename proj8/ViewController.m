@@ -18,7 +18,7 @@
 @implementation ViewController
 
 
-@synthesize inpu_text, search_btn, result;
+@synthesize from_text, search_btn, result_text;
 
 - (void)viewDidLoad
 {
@@ -32,13 +32,13 @@
 
 
 -(IBAction)close_text:(id)sender {
-    [inpu_text resignFirstResponder];
-    [result resignFirstResponder];
+    [from_text resignFirstResponder];
+    [result_text resignFirstResponder];
 }
 
 -(IBAction)begin_search:(id)sender {
-    NSString *query = inpu_text.text;
-    [inpu_text resignFirstResponder];
+    NSString *query = from_text.text;
+    [from_text resignFirstResponder];
     query = [query stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 
         query = [query stringByReplacingOccurrencesOfString:@" " withString:@"+"];
@@ -73,7 +73,7 @@
                 
                 NSLog(@"%@", resultCollection
                       );
-                [result setText:[NSString stringWithFormat:@"%@", [encode objectAtIndex:0]]];
+                [result_text setText:[NSString stringWithFormat:@"%@", [encode objectAtIndex:0]]];
             });
         }
         @catch (NSException *exception) {
@@ -82,6 +82,11 @@
     
     });
    
+}
+
+
+-(IBAction)selectFrom:(id)sender {
+    
 }
     
 
