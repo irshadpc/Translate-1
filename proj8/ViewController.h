@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic, retain) IBOutlet UIButton *search_btn;
+
+@property(nonatomic, retain) IBOutlet UITextView *inpu_text;
+
+@property(nonatomic, retain) IBOutlet UITextView *result;
+
+-(IBAction)begin_search:(id)sender;
+
+-(IBAction)close_text:(id)sender;
+
 @end

@@ -80,8 +80,8 @@
 				84348BBD16AEDBB300305BAA /* AppDelegate.h */,
 				84348BBE16AEDBB300305BAA /* AppDelegate.m */,
 				84348BC016AEDBB300305BAA /* ViewController.h */,
-				84348BC116AEDBB300305BAA /* ViewController.m */,
 				84348BC316AEDBB300305BAA /* ViewController.xib */,
+				84348BC116AEDBB300305BAA /* ViewController.m */,
 				84348BB516AEDBB300305BAA /* Supporting Files */,
 			);
 			path = proj8;
@@ -279,6 +279,7 @@
 				84348BCA16AEDBB300305BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
